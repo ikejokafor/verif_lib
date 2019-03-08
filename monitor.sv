@@ -42,6 +42,7 @@ virtual class monParams_t;
     mailbox agent2monitorMB;
     int numTests;
     mailbox DUT_rdy;
+    mailbox mon_rdy;
 endclass: monParams_t
 
 
@@ -51,9 +52,10 @@ virtual class monitor;
 
     
     mailbox m_monitor2scoreboardMB;
+    mailbox m_agent2monitorMB;    
     int m_numTests;
     mailbox m_DUT_rdy;
-    mailbox m_agent2monitorMB;
+    mailbox m_mon_rdy;
 endclass: monitor
 
 

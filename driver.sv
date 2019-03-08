@@ -39,15 +39,17 @@
 
 virtual class drvParams_t;
     mailbox agent2driverMB;
+    mailbox mon_rdy;
 endclass: drvParams_t
 
 
 virtual class driver;
     extern function new(drvParams_t params = null);
     pure virtual task run();
-    
-    
+
+
     mailbox m_agent2driverMB;
+    mailbox m_mon_rdy;
 endclass: driver
 
 
