@@ -39,7 +39,9 @@
 
 virtual class drvParams_t;
     mailbox agent2driverMB;
-    mailbox mon_rdy;
+    mailbox mon_rdy_arr[];
+    int num_mon;
+    int numTests;
 endclass: drvParams_t
 
 
@@ -49,7 +51,9 @@ virtual class driver;
 
 
     mailbox m_agent2driverMB;
-    mailbox m_mon_rdy;
+    mailbox m_mon_rdy_arr[];
+    int m_num_mon;
+    int m_numTests;
 endclass: driver
 
 

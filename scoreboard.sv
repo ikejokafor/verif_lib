@@ -42,7 +42,7 @@
 virtual class scoreParams_t;
     mailbox agent2scoreboardMB;
     mailbox monitor2scoreboardMB;
-    mailbox simOver;
+    mailbox scbd_done;
     int numTests;
 endclass: scoreParams_t
 
@@ -56,7 +56,7 @@ virtual class scoreboard;
 
     mailbox m_agent2scoreboardMB;
     mailbox m_monitor2scoreboardMB;
-    mailbox m_simOver;
+    mailbox m_scbd_done;
     int m_numTests;
 endclass: scoreboard
 

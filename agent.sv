@@ -40,11 +40,12 @@
 
 virtual class agentParams_t;
     mailbox agent2driverMB;
-    mailbox agent2scoreboardMB;
-    mailbox agent2monitorMB;    
+    mailbox agent2scoreboardMB_arr[];
+    mailbox agent2monitorMB_arr[];    
     int numTests;
     generator test_queue[$];
-    mailbox DUT_rdy;
+    mailbox DUT_rdy_arr[];
+    int num_mon;
 endclass: agentParams_t
 
 
@@ -54,11 +55,12 @@ virtual class agent;
 
     
     mailbox m_agent2driverMB;
-    mailbox m_agent2scoreboardMB;
-    mailbox m_agent2monitorMB;
+    mailbox m_agent2scoreboardMB_arr[];
+    mailbox m_agent2monitorMB_arr[];
     int m_numTests;
     generator m_test_queue[$];
-    mailbox m_DUT_rdy;
+    mailbox m_DUT_rdy_arr[];
+    int m_num_mon;
 endclass: agent
 
 
