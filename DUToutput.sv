@@ -41,6 +41,14 @@ virtual class DUTOutParams_t;
 endclass: DUTOutParams_t
 
 
+// Datum Example
+//
+// typedef struct {
+//     int sim_time;
+//     logic datum;
+// } datum_t
+
+
 virtual class DUToutput;
     extern function new(DUTOutParams_t DUTOutParams = null);
     pure virtual function void bits2plain();
