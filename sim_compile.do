@@ -5,5 +5,5 @@ vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./generator
 vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./monitor.sv
 vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./scoreboard.sv
 vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./agent.sv
-vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./DUToutput.sv
+vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./DUTOutput.sv
 vlog -lint -sv -work verif_lib +incdir+C:/IkennaWorkSpace/verif_lib/ ./assertion.sv
