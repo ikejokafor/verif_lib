@@ -36,7 +36,7 @@
 
 `include "verification_defs.svh"
 `include "generator.sv"
-`include "DUToutput.sv"
+`include "DUTOutput.sv"
 
 
 virtual class scoreParams_t;
