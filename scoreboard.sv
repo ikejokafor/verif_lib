@@ -44,6 +44,7 @@ virtual class scoreParams_t;
     mailbox monitor2scoreboardMB;
     mailbox scbd_done;
     int numTests;
+    int tid;
 endclass: scoreParams_t
 
 
@@ -58,6 +59,7 @@ virtual class scoreboard;
     mailbox m_monitor2scoreboardMB;
     mailbox m_scbd_done;
     int m_numTests;
+    int m_tid;
 endclass: scoreboard
 
 

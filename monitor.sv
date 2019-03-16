@@ -43,6 +43,7 @@ virtual class monParams_t;
     int numTests;
     mailbox DUT_rdy;
     mailbox mon_rdy;
+    int tid;
 endclass: monParams_t
 
 
@@ -56,6 +57,7 @@ virtual class monitor;
     int m_numTests;
     mailbox m_DUT_rdy;
     mailbox m_mon_rdy;
+    int m_tid;
 endclass: monitor
 
 
