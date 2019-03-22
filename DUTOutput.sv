@@ -49,13 +49,13 @@ endclass: DUTOutParams_t
 // } datum_t
 
 
-virtual class DUToutput;
+virtual class DUTOutput;
     extern function new(DUTOutParams_t DUTOutParams = null);
     pure virtual function void bits2plain();
-endclass: DUToutput
+endclass: DUTOutput
 
 
-function DUToutput::new(DUTOutParams_t DUTOutParams = null);
+function DUTOutput::new(DUTOutParams_t DUTOutParams = null);
 endfunction: new
 
 

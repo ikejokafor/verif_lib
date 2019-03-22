@@ -51,8 +51,8 @@ endclass: scoreParams_t
 virtual class scoreboard;
     extern function new(scoreParams_t scoreParams = null);
     pure virtual task run();
-    pure virtual function void createSolution(generator test, DUToutput sol);
-    pure virtual function int checkSolution(DUToutput query, DUToutput sol);
+    pure virtual function void createSolution(generator test, DUTOutput sol);
+    pure virtual function int checkSolution(DUTOutput query, DUTOutput sol);
     
 
     mailbox m_agent2scoreboardMB;
