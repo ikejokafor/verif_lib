@@ -38,6 +38,7 @@
 
 
 virtual class asrtParams_t;
+    bool runForever;
 endclass: asrtParams_t
 
 
@@ -46,6 +47,7 @@ virtual class assertion;
     pure virtual task run();
     
     
+    bool m_runForever;
 endclass: assertion
 
 

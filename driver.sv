@@ -42,6 +42,7 @@ virtual class drvParams_t;
     mailbox mon_rdy_arr[];
     int num_mon;
     int numTests;
+    bool runForever;
 endclass: drvParams_t
 
 
@@ -54,6 +55,7 @@ virtual class driver;
     mailbox m_mon_rdy_arr[];
     int m_num_mon;
     int m_numTests;
+    bool m_runForever;
 endclass: driver
 
 

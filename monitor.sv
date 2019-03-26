@@ -44,6 +44,7 @@ virtual class monParams_t;
     mailbox DUT_rdy;
     mailbox mon_rdy;
     int tid;
+    bool runForever;
 endclass: monParams_t
 
 
@@ -58,6 +59,7 @@ virtual class monitor;
     mailbox m_DUT_rdy;
     mailbox m_mon_rdy;
     int m_tid;
+    bool m_runForever;
 endclass: monitor
 
 

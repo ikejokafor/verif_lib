@@ -45,6 +45,7 @@ virtual class scoreParams_t;
     mailbox scbd_done;
     int numTests;
     int tid;
+    bool runForever;
 endclass: scoreParams_t
 
 
@@ -60,6 +61,7 @@ virtual class scoreboard;
     mailbox m_scbd_done;
     int m_numTests;
     int m_tid;
+    bool m_runForever;
 endclass: scoreboard
 
 

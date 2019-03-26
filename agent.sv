@@ -46,6 +46,7 @@ virtual class agentParams_t;
     generator test_queue[$];
     mailbox DUT_rdy_arr[];
     int num_mon;
+    bool runForever;
 endclass: agentParams_t
 
 
@@ -61,6 +62,7 @@ virtual class agent;
     generator m_test_queue[$];
     mailbox m_DUT_rdy_arr[];
     int m_num_mon;
+    bool m_runForever;
 endclass: agent
 
 
