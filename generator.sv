@@ -38,6 +38,7 @@
 
 
 virtual class genParams_t;
+    int ti;
 endclass: genParams_t
 
 
@@ -49,6 +50,9 @@ virtual class generator;
     extern function new(genParams_t params = null);
     pure virtual function void createTest(crtTestParams_t params);    
     pure virtual function void plain2bits();
+    
+    
+    int m_ti;
 endclass: generator
 
 
