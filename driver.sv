@@ -39,7 +39,7 @@
 
 virtual class drvParams_t;
     mailbox agent2driverMB;
-    mailbox mon_rdy_arr[];
+    mailbox DUT_rdy;
     int num_mon;
     int numTests;
     bool runForever;
@@ -52,7 +52,7 @@ virtual class driver;
 
 
     mailbox m_agent2driverMB;
-    mailbox m_mon_rdy_arr[];
+    mailbox m_DUT_rdy;
     int m_num_mon;
     int m_numTests;
     bool m_runForever;

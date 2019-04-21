@@ -41,7 +41,6 @@ virtual class monParams_t;
     mailbox monitor2scoreboardMB;
     mailbox agent2monitorMB;
     int numTests;
-    mailbox DUT_rdy;
     mailbox mon_rdy;
     int tid;
     bool runForever;
