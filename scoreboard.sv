@@ -46,6 +46,9 @@ virtual class scoreParams_t;
     int numTests;
     int tid;
     bool runForever;
+    int test_bi;
+    int test_ei;   
+    string outputDir;
 endclass: scoreParams_t
 
 
@@ -62,6 +65,9 @@ virtual class scoreboard;
     int m_numTests;
     int m_tid;
     bool m_runForever;
+    int m_test_bi;
+    int m_test_ei;       
+    string m_outputDir;
 endclass: scoreboard
 
 

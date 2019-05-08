@@ -43,6 +43,10 @@ virtual class drvParams_t;
     int num_mon;
     int numTests;
     bool runForever;
+    bool model_delay;
+    int test_bi;
+    int test_ei;    
+    string outputDir;
 endclass: drvParams_t
 
 
@@ -56,6 +60,10 @@ virtual class driver;
     int m_num_mon;
     int m_numTests;
     bool m_runForever;
+    bool m_model_delay;
+    int m_test_bi;
+    int m_test_ei;       
+    string m_outputDir;
 endclass: driver
 
 

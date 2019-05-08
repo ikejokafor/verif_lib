@@ -44,6 +44,10 @@ virtual class monParams_t;
     mailbox mon_rdy;
     int tid;
     bool runForever;
+    bool model_delay;
+    int test_bi;
+    int test_ei;    
+    string outputDir;   
 endclass: monParams_t
 
 
@@ -59,6 +63,10 @@ virtual class monitor;
     mailbox m_mon_rdy;
     int m_tid;
     bool m_runForever;
+    bool m_model_delay;
+    int m_test_bi;
+    int m_test_ei;        
+    string m_outputDir;   
 endclass: monitor
 
 

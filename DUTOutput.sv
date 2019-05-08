@@ -38,6 +38,7 @@
 
 
 virtual class DUTOutParams_t;
+    string outputDir;
 endclass: DUTOutParams_t
 
 
@@ -52,6 +53,8 @@ endclass: DUTOutParams_t
 virtual class DUTOutput;
     extern function new(DUTOutParams_t DUTOutParams = null);
     pure virtual function void bits2plain();
+    
+    string m_outputDir;
 endclass: DUTOutput
 
 

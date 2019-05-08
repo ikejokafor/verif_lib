@@ -39,6 +39,7 @@
 
 virtual class genParams_t;
     int ti;
+    string outputDir;
 endclass: genParams_t
 
 
@@ -53,6 +54,7 @@ virtual class generator;
     
     
     int m_ti;
+    string m_outputDir;
 endclass: generator
 
 

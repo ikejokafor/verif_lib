@@ -39,6 +39,7 @@
 
 virtual class asrtParams_t;
     bool runForever;
+    string outputDir;
 endclass: asrtParams_t
 
 
@@ -48,6 +49,7 @@ virtual class assertion;
     
     
     bool m_runForever;
+    string m_outputDir;
 endclass: assertion
 
 
