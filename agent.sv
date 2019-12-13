@@ -63,7 +63,7 @@ virtual class agent;
     mailbox m_agent2scoreboardMB_arr[];
     mailbox m_agent2monitorMB_arr[];
     int m_numTests;
-    generator m_crt_test_queue[$];
+    generator m_test_queue[$];
     mailbox m_DUT_rdy;
     mailbox m_mon_rdy_arr[];
     int m_num_mon;
